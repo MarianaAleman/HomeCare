@@ -1,41 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import welcome from './welcome.js';
+import cct from './cct.js';
+import location from './location.js';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-
-        <Image
-          source={require('./img/logo.jpeg')}
-          style={styles.picture}
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="welcome"
+          component={welcome}
+          options={{ title: 'Welcome!' }}
         />
-
-      <button >Log In</button>
-
-
-    </View>
+          <Stack.Screen
+          name="location"
+          component={cct}
+          options={{ title: 'Your location' }}
+        />
+          <Stack.Screen
+          name="cct"
+          component={cct}
+          options={{ title: 'CCT' }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  maintext:{
-    fontFamily: 'roboto',
-    color: 'gray',
-    
-  },
-  picture: { 
-    width: 200, 
-    height: 200
-  },
-  boton:{
-    width: 100,
-    height: 50,
-  },
-});
