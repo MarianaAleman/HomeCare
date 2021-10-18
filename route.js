@@ -8,6 +8,8 @@ import MapViewDirections from 'react-native-maps-directions';
 
 export default function route (navigation) {
 
+  // code reference https://github.com/bramus/react-native-maps-directions
+  
   const [coordinates] = useState([
     {
       latitude: 53.346194297487,  // origin Cct
