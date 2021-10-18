@@ -5,7 +5,7 @@ import * as Location from 'expo-location';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
 
 
-export default function cct(navigation) {
+export default function location (navigation) {
 
   const [location, setLocation] = useState({coords:{latitude:0, longitude: 0}}); //set the user location
   const [errorMsg, setErrorMsg] = useState(null);
@@ -37,11 +37,11 @@ export default function cct(navigation) {
 
     
      <MapView style={styles.map} 
-      showsUserLocation={true}
+      //showsUserLocation={true}
        provider="google"
         initialRegion={{
-          latitude: location.coords.latitude, //Set initial latitude of Dublin
-          longitude: location.coords.longitude, //Set initial longitude of Dublin
+          latitude: 53.346194297487,  //Set initial latitude of Dublin
+          longitude: -6.258982589999437, //Set initial longitude of Dublin
           latitudeDelta: 0.02, //Set the overview of the map
           longitudeDelta: 0.02, //Set the overview of the map
          }}>

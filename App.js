@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import welcome from './welcome.js';
 import cct from './cct.js';
 import location from './location.js';
+import route from './route.js';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,13 +20,18 @@ export default function App() {
         />
           <Stack.Screen
           name="location"
-          component={cct}
+          component={location}
           options={{ title: 'Your location' }}
         />
           <Stack.Screen
           name="cct"
           component={cct}
           options={{ title: 'CCT' }}
+        />
+        <Stack.Screen
+          name="route"
+          component={route}
+          options={{ title: 'Route' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

@@ -33,7 +33,7 @@ export default function welcome ({navigation}){
         <TouchableOpacity
         style={styles.button}
         onPress={()=>{
-            navigation.navigate("location")
+            navigation.navigate("route")
         }}>
       <Text style={styles.btnText}> Create my route to CCT</Text>
       </TouchableOpacity>
