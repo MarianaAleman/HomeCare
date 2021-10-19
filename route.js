@@ -23,7 +23,7 @@ export default function route (navigation) {
 
 
 
-  const GOOGLE_MAPS_APIKEY = 'AIzaSyCfbGYNkjx7tbjson8BWmK4hhaQzhD7PDA';
+  const GOOGLE_MAPS_APIKEY = 'AIzaSyCfbGYNkjx7tbjson8BWmK4hhaQzhD7PDA'; // google API
 
   return (
 
@@ -40,13 +40,12 @@ export default function route (navigation) {
          }}> 
          
         <MapViewDirections
+        lineDashPattern={[2]} // draw a line route
         origin={coordinates[0]} // The origin location to start routing from
         destination={coordinates[1]} //the destination routing to 
-        //optimizeWaypoints={true}
         apikey={GOOGLE_MAPS_APIKEY} // google API direction
-        strokeColor={'hotpink'}
-        strokeWidth={3}
-        onReady={res => {console.log(res)}}
+        strokeColor={'hotpink'} // color
+        strokeWidth={3} // line width 
         precision="high"
         />
 
