@@ -11,7 +11,7 @@ export default function welcome ({navigation}){
           }}
           style={styles.picture}
         />
-        <Text style={styles.textsytle}> Welcome!</Text>
+        <Text style={styles.textsytle}> Welcome to Workers Track App!</Text>
         <Text style={styles.textstyle2}> What would you like to search? </Text>
 
         <TouchableOpacity
@@ -37,7 +37,7 @@ export default function welcome ({navigation}){
         }}>
       <Text style={styles.btnText}> Create my route to CCT</Text>
       </TouchableOpacity>
-      <Text style={styles.smalltext}>By BadNachos</Text>
+      <Text style={styles.smalltext}>Worker Track App By BadNachos</Text>
  </View> 
 </View>
 );
