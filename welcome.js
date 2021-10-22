@@ -7,7 +7,7 @@ export default function welcome ({navigation}){
 <View style={styles.container2}>
       <Image
           source={{
-            uri: 'https://i.ibb.co/9wQpC7F/3.png" alt="1" border="0',
+            uri: 'https://i.ibb.co/YTRXB69/1-logo.png',
           }}
           style={styles.picture}
         />
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
   },
   textsytle:{
     padding: 10,
-    fontSize: 50,
+    fontSize: 30,
     
   },
     textstyle2:{
