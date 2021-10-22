@@ -11,7 +11,8 @@ export default function welcome ({navigation}){
           }}
           style={styles.picture}
         />
-        <Text style={styles.textsytle}> Welcome to Workers Track App!</Text>
+        <Text style={styles.textsytle}> Welcome</Text>
+        <Text style={styles.textsytle}> to Workers Track App!</Text>
         <Text style={styles.textstyle2}> What would you like to search? </Text>
 
         <TouchableOpacity
