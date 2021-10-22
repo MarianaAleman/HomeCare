@@ -7,7 +7,7 @@ export default function welcome ({navigation}){
 <View style={styles.container2}>
       <Image
           source={{
-            uri: 'https://lh3.googleusercontent.com/9tLfTpdILdHDAvGrRm7GdbjWdpbWSMOa0csoQ8pUba9tLP8tq7M4Quks1xuMQAVnAxVfryiDXRzZ-KDnkPv8Sm4g_YFom1ltQHjQ6Q',
+            uri: 'https://drive.google.com/file/d/1vUs4oVw_5GdbwuxmFWuOSqxdGECIRGMR/view?usp=sharing',
           }}
           style={styles.picture}
         />
