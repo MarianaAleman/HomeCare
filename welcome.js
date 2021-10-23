@@ -7,7 +7,7 @@ export default function welcome ({navigation}){
 <View style={styles.container2}>
       <Image
           source={{
-            uri: 'https://i.ibb.co/YTRXB69/1-logo.png',
+            uri: 'https://i.postimg.cc/gkKZVthk/1-logo.png',
           }}
           style={styles.picture}
         />
