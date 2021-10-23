@@ -33,8 +33,8 @@ export default function route (navigation) {
       //showsUserLocation={true}
        provider="google"
         initialRegion={{
-          latitude: 53.346194297487, //Set initial latitude of Dublin
-          longitude: -6.258982589999437, //Set initial longitude of Dublin
+          latitude: 53.350140, //Set initial latitude of Dublin
+          longitude: -6.266155, //Set initial longitude of Dublin
           latitudeDelta: 0.02, //Set the overview of the map
           longitudeDelta: 0.02, //Set the overview of the map
          }}> 
@@ -44,7 +44,7 @@ export default function route (navigation) {
         origin={coordinates[0]} // The origin location to start routing from
         destination={coordinates[1]} //the destination routing to 
         apikey={GOOGLE_MAPS_APIKEY} // google API direction
-        strokeColor={'hotpink'} // color
+        strokeColor={'black'} // color
         strokeWidth={3} // line width 
         precision="high"
         />
